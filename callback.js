@@ -7,18 +7,16 @@
 
 console.log(1);
 
-function esperar2segundos(/* TODO */) {
+function esperar2segundos(res) {
     console.log(2)
-    setTimeout((/* TODO */) => {
-        console.log(3)
-        /* TODO */
-    }, 2000);
-    /* TODO */
+    setTimeout(() => {
+        console.log(3);
+        res();
+    }, 2000);    
 }
 
-function alTerminar() {
-    /* TODO */
-    console.log(4)
+function alTerminar() {    
+    console.log(4);
 }
 
-esperar2segundos(/* TODO */);
+esperar2segundos(alTerminar);
