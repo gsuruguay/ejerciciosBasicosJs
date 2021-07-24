@@ -1,1 +1,1 @@
-# AvalithSkillBasic
+# Se realizan ejercicios de Javascript
