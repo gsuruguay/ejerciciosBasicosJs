@@ -6,8 +6,23 @@ let textoCensurado = null;
     de manera que se muestre por consola:
 
     "XXX XXX XXXXX​ XX XXX XXXXXX XXXXXXX XX XX XXXXXXX XX XX XXXXXXXXX XX XXXXXX XXXXX"
-
-    Reemplazar este comentario con su codigo.
  */
+
+let expReg = /[a-zA-Z]/;
+let espacio = /\s/;
+
+if (texto.length != 0) {
+    textoCensurado = [];
+
+    for (let i = 0; i < texto.length; i++) {
+        let letra = texto[i];
+        if (expReg.test(letra)) {
+            textoCensurado += "X";
+        }
+        else if (espacio.test(letra)) {
+            textoCensurado += " ";
+        }
+    }
+}
 
 console.log(textoCensurado)
